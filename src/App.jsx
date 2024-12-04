@@ -2,8 +2,6 @@ import React from "react";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Count from "./Count";
 import Clock from "./Clock";
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 
 function App() {
@@ -16,10 +14,10 @@ function App() {
         <h1 className="Title">でじたるかうんたぁ</h1>
         <nav>
           <Link to="/Count">
-            <button>かうんたぁ</button>
+            <button className="btn0">かうんたぁ</button>
           </Link>
           <Link to="/Clock">
-            <button>いまなんじぃ</button>
+            <button className="btn0">いまなんじぃ</button>
           </Link>
         </nav>
         <Routes>

@@ -42,16 +42,15 @@ function Count() {
   return (
     <>
       <div className="counter-container">
-        <h1 className="Title">でじたるかうんたぁ</h1>
         <div className="count-area">
             <div className="display">{count}</div>
             <div className="button-area">
                 <p className="btn-text">下のボタンを押してみよ</p>
-                <button onClick={IncreaseProcess}>+</button>
-                <button onClick={DecreaseProcess}>-</button>
-                <button onClick={ResetProcess}>リセット</button>
-                <button onClick={AutoCountProcess}>カウント開始</button>
-                <button onClick={StopCountProcess}>■</button>
+                <button className="btn" onClick={IncreaseProcess}>ふやす　+</button>
+                <button className="btn" onClick={DecreaseProcess}>へらす　-</button>
+                <button className="btn" onClick={ResetProcess}>リセット</button>
+                <button className="btn" onClick={AutoCountProcess}>カウント開始　▶</button>
+                <button className="btn" onClick={StopCountProcess}>停止　■</button>
             </div>
         </div>
     </div>

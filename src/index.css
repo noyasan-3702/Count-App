@@ -75,7 +75,27 @@ body {
   color: #ffffff;
 }
 
-.button-area button {
+.btn0 {
+  font-weight: bold;
+  font-size: 16px;
+  padding: 10px 20px;
+  margin: 0 50px;
+  background: #007bff;
+  color: #000000;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.btn0:hover {
+  background-color: #0056b3;
+}
+
+.btn0:active {
+  transform: scale(0.95);
+}
+
+.btn {
   font-weight: bold;
   font-size: 16px;
   padding: 10px 20px;
@@ -88,11 +108,11 @@ body {
   transition: background-color 0.3s;
 }
 
-.button-area button:hover {
+.btn:hover {
   background-color: #0056b3;
 }
 
-.button-area button:active {
+.btn:active {
   transform: scale(0.95);
 }
 

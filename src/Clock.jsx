@@ -37,7 +37,6 @@ function Clock() {
   return (
     <>
     <div className="counter-container">
-    <h1 className="Title">でじたるかうんたぁ</h1>
         <div className="clock-area">
             <div className="time-display">{formatTime(time)}</div>
             <div className="date-display">{formatDate(time)}</div>
