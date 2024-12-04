@@ -1,68 +1,98 @@
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/*================================================================================*/
+/* 全体のレイアウト*/
+html,body {
+  height: 100%;
 }
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
 body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  background: #0f3854;
+  background: radial-gradient(ellipse at center,  #0a2e38  0%, #000000 70%);
+  background-size: 100%;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+.counter-container {
+  text-align: center;
+  padding: 50px;
+  color: #daf6ff;
+  text-shadow: 0 0 20px rgba(10, 175, 230, 1),  0 0 20px rgba(10, 175, 230, 0);
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
+
+/*================================================================================*/
+/* タイトルのレイアウト*/
+.Title {
+  font-size: 70px; /* 日付のサイズ */
+  white-space: pre-wrap;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+
+/*================================================================================*/
+/* 時計のレイアウト */
+.clock-area {
+  text-align: center;
+  color: #ffffff; /* デジタルグリーン */
+}
+
+.time-display {
+  font-size: 96px; /* 時刻のサイズ */
+  font-weight: bold;
+  color: #ffffff; /* 時計の色 */
+  text-shadow: 0 0 20px rgba(10, 175, 230, 1),  0 0 20px rgba(10, 175, 230, 0);
+}
+
+.date-display {
+  font-size: 24px; /* 日付のサイズ */
+  color: #ffffff; /* 日付の色 */
+  text-shadow: 0 0 20px rgba(10, 175, 230, 1),  0 0 20px rgba(10, 175, 230, 0);
+}
+
+
+/*================================================================================*/
+/* カウンターのレイアウト */
+.count-area {
+  text-align: center;
+  color: #ffffff; /* デジタルグリーン */
+}
+
+.display {
+  width: 50%;
+  margin:  0 auto; 
+  font-size: 96px; /* 文字のサイズ */
+  color: #ffffff; /* カウントの色 */
+  text-shadow: 0 0 20px rgba(10, 175, 230, 1),  0 0 20px rgba(10, 175, 230, 0);
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+}
+
+/*================================================================================*/
+/* ボタンのレイアウト */
+.btn-text {
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.button-area button {
+  font-weight: bold;
+  font-size: 16px;
+  padding: 10px 20px;
+  margin: 0 5px;
+  background: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
   cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+  transition: background-color 0.3s;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+.button-area button:hover {
+  background-color: #0056b3;
 }
+
+.button-area button:active {
+  transform: scale(0.95);
+}
+

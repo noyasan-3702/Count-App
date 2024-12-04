@@ -1,19 +1,35 @@
-import { useState } from 'react'
+import React from "react";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import Count from "./Count";
+import Clock from "./Clock";
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
 
+  //　HTMLを表示する //
   return (
     <>
-      <div>
-
+    <Router>
+      <div className="counter-container">
+        <h1 className="Title">でじたるかうんたぁ</h1>
+        <nav>
+          <Link to="/Count">
+            <button>かうんたぁ</button>
+          </Link>
+          <Link to="/Clock">
+            <button>いまなんじぃ</button>
+          </Link>
+        </nav>
+        <Routes>
+          <Route path="/Count" element={<Count />} />
+          <Route path="/Clock" element={<Clock />} />
+        </Routes>
       </div>
-
+    </Router>
     </>
   )
 }
 
-export default App
+export default App;
