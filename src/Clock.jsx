@@ -26,11 +26,11 @@ function Clock() {
 
  // 日付のフォーマット
  const formatDate = (date) => {
-   return date.toLocaleDateString("en-US", {
-     weekday: "short", // 曜日 (例: Tue)
-     year: "numeric",
-     month: "short",
-     day: "numeric",
+   return date.toLocaleDateString("ja-JP", {
+     weekday: "short",  // 曜日 (例: 金)
+     year: "numeric",   // 年 (例: 2024年)
+     month: "long",     // 月 (例: 1月)
+     day: "numeric",    // 日 (例: 1日)
    });
  };
 

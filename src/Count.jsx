@@ -45,10 +45,10 @@ function Count() {
         <div className="count-area">
             <div className="display">{count}</div>
             <div className="button-area">
-                <p className="btn-text">下のボタンを押してみよ</p>
+                <p className="btn-text">下のボタンを押してみよ</p>↺
                 <button className="btn" onClick={IncreaseProcess}>ふやす　+</button>
                 <button className="btn" onClick={DecreaseProcess}>へらす　-</button>
-                <button className="btn" onClick={ResetProcess}>リセット</button>
+                <button className="btn" onClick={ResetProcess}>リセット　↺</button>
                 <button className="btn" onClick={AutoCountProcess}>カウント開始　▶</button>
                 <button className="btn" onClick={StopCountProcess}>停止　■</button>
             </div>
